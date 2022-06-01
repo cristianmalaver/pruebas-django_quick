@@ -1,0 +1,30 @@
+{% extends 'social/layout.html' %}
+{% load humanize %}
+{% block content %}
+<article>
+    
+<div class="container-article">
+<h1> Lista de clientes de creados <h1>
+    </div>
+</article>
+    
+{% for client in clients %}
+<article>
+    
+    <div class="container-article">
+        
+        <div>
+            
+            <h2 class="username"><a href="{% url 'profile' client.first_name %}">{{ client.first_name }} {{ client.last_name }}</a></h2>
+            
+            <i class="clock"></i>
+           
+            <div class="post">Documento #: {{ client.document }}</div>
+            <div class="post">Correo : {{ client.email }}</div>
+        </div>
+    </div>
+</article>
+
+{% endfor %}
+
+{% endblock %}
