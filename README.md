@@ -1,6 +1,6 @@
 prueba de django para la empresa quick
 
-PASOS PARA EJECUTAR LA APLIACACION
+PASOS PARA EJECUTAR LA APLICACION
 
 1. Descargar el repositorio usando Github Desktop o descargar mediante archivo ZIP y descomprimir la carpeta de Django-Quick
 
